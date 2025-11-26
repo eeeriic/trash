@@ -1,0 +1,14 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: clamp(0.5rem, 1vw, 1rem);
+    margin: 1rem;
+    transition: transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.90);
+}
