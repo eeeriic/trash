@@ -1,0 +1,22 @@
+.container {
+    background-color: red;
+    height: 50%; /* this is the pct im talking abt */
+    width: 20rem;
+}
+
+.inpField {
+    background-color: blue;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inp {
+    flex: 1;
+    padding: 5px;
+}
+
+.btn {
+    
+}

@@ -1,11 +1,19 @@
 .container {
+    margin: auto;
     display: flex;
-    flex: 1;
+    justify-content: space-between;
     align-items: center;
+    width: 20rem;
 }
 
 .box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.btn {
+    height: 1rem;
+    width: 1rem;
 }

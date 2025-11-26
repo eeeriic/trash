@@ -3,6 +3,7 @@ import { Banana, Apple, Grape } from "lucide-react";
 import { useState } from "react";
 import styles from "./BtnCounter.module.css"
 import Footer1 from "../../../components/Footers/Footer1/Footer1";
+import Navbar1 from "../../../components/Navbars/Navbar1/Navbar1";
 
 export default function BtnCounter() {
 
@@ -25,18 +26,18 @@ const handleReset = () => setCounts(initialCounts);
 
     return (
         <div className="page">
-            <h1>Btn Counter</h1>
+            <Navbar1 title="Btn Counter"></Navbar1>
             <div className={styles.container}>
                 <div className={styles.box}>
-                    <BtnIcons icon={Banana} bg="#FFEF00" onClick={() => handleClick("banana")}></BtnIcons>
+                    <BtnIcons icon={Banana} bg="#FFEF00" onClick={() => handleClick("banana")} className={styles.btn}></BtnIcons>
                     <p>{counts.banana}</p>
                 </div>
                 <div className={styles.box}>
-                    <BtnIcons icon={Apple} bg="#F2003C" onClick={() => handleClick("apple")}></BtnIcons>
+                    <BtnIcons icon={Apple} bg="#F2003C" onClick={() => handleClick("apple")} className={styles.btn}></BtnIcons>
                     <p>{counts.apple}</p>
                 </div>
                 <div className={styles.box}>
-                    <BtnIcons icon={Grape} bg="#9966CC" onClick={() => handleClick("grape")}></BtnIcons>
+                    <BtnIcons icon={Grape} bg="#9966CC" onClick={() => handleClick("grape")} className={styles.btn}></BtnIcons>
                     <p>{counts.grape}</p>
                 </div>
                 

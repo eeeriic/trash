@@ -10,6 +10,7 @@ import Error from "./pages/NormalPages/Error/Error.jsx"
 // mini games
 import BtnCounter from './pages/MiniGames/BtnCounter/BtnCounter.jsx'
 import Calculator from './pages/MiniGames/Calculator/Calculator.jsx'
+import ToDoNotes from './pages/MiniGames/ToDoNotes/ToDoNotes.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 const router = createBrowserRouter([
@@ -23,7 +24,8 @@ const router = createBrowserRouter([
 
       // mini games
       { path: "BtnCounter", element: <BtnCounter/> },
-      { path: "Calculator", element: <Calculator/> }
+      { path: "Calculator", element: <Calculator/> },
+      { path: "ToDoNotes", element: <ToDoNotes/> }
 
     ]
   }
