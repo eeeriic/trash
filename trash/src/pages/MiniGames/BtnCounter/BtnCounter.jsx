@@ -29,15 +29,15 @@ const handleReset = () => setCounts(initialCounts);
             <Navbar1 title="Btn Counter"></Navbar1>
             <div className={styles.container}>
                 <div className={styles.box}>
-                    <BtnIcons icon={Banana} bg="#FFEF00" onClick={() => handleClick("banana")} className={styles.btn}></BtnIcons>
+                    <BtnIcons icon={Banana} bg="#FFEF00" onClick={() => handleClick("banana")} className={styles.btn} iconClassName={styles.icon}></BtnIcons>
                     <p>{counts.banana}</p>
                 </div>
                 <div className={styles.box}>
-                    <BtnIcons icon={Apple} bg="#F2003C" onClick={() => handleClick("apple")} className={styles.btn}></BtnIcons>
+                    <BtnIcons icon={Apple} bg="#F2003C" onClick={() => handleClick("apple")} className={styles.btn} iconClassName={styles.icon}></BtnIcons>
                     <p>{counts.apple}</p>
                 </div>
                 <div className={styles.box}>
-                    <BtnIcons icon={Grape} bg="#9966CC" onClick={() => handleClick("grape")} className={styles.btn}></BtnIcons>
+                    <BtnIcons icon={Grape} bg="#9966CC" onClick={() => handleClick("grape")} className={styles.btn} iconClassName={styles.icon}></BtnIcons>
                     <p>{counts.grape}</p>
                 </div>
                 

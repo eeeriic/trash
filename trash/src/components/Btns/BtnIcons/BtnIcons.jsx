@@ -1,5 +1,3 @@
-import styles from "./BtnIcons.module.css";
-
 export default function BtnIcons({
     icon: Icon,
     bg,
