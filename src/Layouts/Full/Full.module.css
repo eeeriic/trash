@@ -4,5 +4,5 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background-color: var(--bg-1);
+    background-color: var(--color1);
 }

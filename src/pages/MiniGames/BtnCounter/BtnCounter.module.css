@@ -1,11 +1,15 @@
 .container {
-    margin: auto;
+    width: 100%;
+    max-width: 900px;     
+    margin: 0 auto;      
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    flex: 1;
+    align-content: center;  
+    flex: 0 1 auto;         
     flex-wrap: wrap;
     gap: 2rem;
+    
 }
 
 .box {
@@ -13,4 +17,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 50%;
+    height: 50%;
 }

@@ -24,20 +24,20 @@ const handleReset = () => setCounts(initialCounts);
     return (
         <section className={styles.container}>
                 <div className={styles.box}>
-                    <button onClick={() => handleClick("banana")}>
-                        <Banana />
+                    <button onClick={() => handleClick("banana")} className={styles.btn} style={{ backgroundColor: "yellow" }}>
+                        <Banana className={styles.icon}/>
                     </button>
                     <p>{counts.banana}</p>
                 </div>
                 <div className={styles.box}>
-                    <button onClick={() => handleClick("apple")}>
-                        <Apple />
+                    <button onClick={() => handleClick("apple")} className={styles.btn} style={{ backgroundColor: "red" }}>
+                        <Apple className={styles.icon}/>
                     </button>
                     <p>{counts.apple}</p>
                 </div>
                 <div className={styles.box}>
-                    <button onClick={() => handleClick("grape")}>
-                        <Grape />
+                    <button onClick={() => handleClick("grape")} className={styles.btn} style={{ backgroundColor: "purple" }}>
+                        <Grape className={styles.icon}/>
                     </button>
                     <p>{counts.grape}</p>
                 </div>
