@@ -20,18 +20,20 @@ export default function ToDoNotes() {
 
     return (
         <section className={styles.container}>
-                <div className={styles.inpField}>
-                    <input type="text" className={styles.inp} value={text} onChange={e => setText(e.target.value)} onKeyDown={e => {if (e.key === "Enter") {addTask()}}}/>
-                    <BtnIcons icon={Check} iconClassName={styles.checkIcon} onClick={addTask}></BtnIcons>
-                </div>
-                <div className={styles.taskField}>
-                    <ul className={styles.list}>
-                        {tasks.map(task => (
-                            <li key={task.id} className={styles.listli}>
-                                <span className={styles.taskText}>{task.text}</span> <BtnIcons icon={Trash2} iconClassName={styles.trashIcon} onClick={() => removeTask(task.id)}></BtnIcons>
-                            </li>
-                        ))}
-                    </ul>
+                <div className={styles.box}>
+                    <div className={styles.inpField}>
+                        <input type="text" className={styles.inp} value={text} onChange={e => setText(e.target.value)} onKeyDown={e => {if (e.key === "Enter") {addTask()}}}/>
+                        <BtnIcons icon={Check} iconClassName={styles.checkIcon} onClick={addTask}></BtnIcons>
+                    </div>
+                    <div className={styles.taskField}>
+                        <ul className={styles.list}>
+                            {tasks.map(task => (
+                                <li key={task.id} className={styles.listli}>
+                                    <span className={styles.taskText}>{task.text}</span> <BtnIcons icon={Trash2} iconClassName={styles.trashIcon} onClick={() => removeTask(task.id)}></BtnIcons>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
         </section>
     )

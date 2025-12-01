@@ -1,12 +1,19 @@
 .container {
-    background-color: rgb(218, 151, 70);
-    height: 50%; /* this is the pct im talking abt */
-    width: 100%;
-    max-width: 20rem;
+    background-color: blue;
+    flex: 1;
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
+}
+
+.box {
+    max-width: 20rem;
+    width: 100%;
+    background-color: aqua;
+
 }
 
 .inpField {
