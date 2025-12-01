@@ -28,14 +28,6 @@
     flex: 1;
 }
 
-.checkIcon {
-    color: lightgreen;
-}
-
-.trashIcon {
-    color: red;
-}
-
 .taskField {
     background-color: steelblue;
     width: 100%;

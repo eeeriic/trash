@@ -3,7 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightsteelblue;
+    background-color: var(--bg-1);
     margin-bottom: auto;
+}
 
+.btn {
+    border: none;
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
 }

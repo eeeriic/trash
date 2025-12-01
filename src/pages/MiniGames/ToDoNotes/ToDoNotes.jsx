@@ -1,5 +1,4 @@
 import styles from "./ToDoNotes.module.css"
-import BtnIcons from "../../../components/Btns/BtnIcons/BtnIcons"
 import { Check, Trash2 } from 'lucide-react';
 import { useState } from "react";
 
@@ -23,13 +22,15 @@ export default function ToDoNotes() {
                 <div className={styles.box}>
                     <div className={styles.inpField}>
                         <input type="text" className={styles.inp} value={text} onChange={e => setText(e.target.value)} onKeyDown={e => {if (e.key === "Enter") {addTask()}}}/>
-                        <BtnIcons icon={Check} iconClassName={styles.checkIcon} onClick={addTask}></BtnIcons>
+                        <button onClick={addTask}>
+                            <Check />
+                        </button>
                     </div>
                     <div className={styles.taskField}>
                         <ul className={styles.list}>
                             {tasks.map(task => (
                                 <li key={task.id} className={styles.listli}>
-                                    <span className={styles.taskText}>{task.text}</span> <BtnIcons icon={Trash2} iconClassName={styles.trashIcon} onClick={() => removeTask(task.id)}></BtnIcons>
+                                    <span className={styles.taskText}>{task.text}</span> <button onClick={() => removeTask(task.id)}><Trash2 /></button>
                                 </li>
                             ))}
                         </ul>

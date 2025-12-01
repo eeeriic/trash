@@ -1,4 +1,3 @@
-import BtnIcons from "../../../components/Btns/BtnIcons/BtnIcons"
 import { Banana, Apple, Grape } from "lucide-react";
 import { useState } from "react";
 import styles from "./BtnCounter.module.css"
@@ -25,15 +24,21 @@ const handleReset = () => setCounts(initialCounts);
     return (
         <section className={styles.container}>
                 <div className={styles.box}>
-                    <BtnIcons icon={Banana} bg="#FFEF00" onClick={() => handleClick("banana")} className={styles.btn} iconClassName={styles.icon}></BtnIcons>
+                    <button onClick={() => handleClick("banana")}>
+                        <Banana />
+                    </button>
                     <p>{counts.banana}</p>
                 </div>
                 <div className={styles.box}>
-                    <BtnIcons icon={Apple} bg="#F2003C" onClick={() => handleClick("apple")} className={styles.btn} iconClassName={styles.icon}></BtnIcons>
+                    <button onClick={() => handleClick("apple")}>
+                        <Apple />
+                    </button>
                     <p>{counts.apple}</p>
                 </div>
                 <div className={styles.box}>
-                    <BtnIcons icon={Grape} bg="#9966CC" onClick={() => handleClick("grape")} className={styles.btn} iconClassName={styles.icon}></BtnIcons>
+                    <button onClick={() => handleClick("grape")}>
+                        <Grape />
+                    </button>
                     <p>{counts.grape}</p>
                 </div>
             <button onClick={handleReset}>reset</button>

@@ -3,3 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root.light {
+  --bg-1: #ffffff;
+  --bg-2: #f3f4f6;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+  --border: #d1d5db;
+  --card-bg: #ffffff;
+
+  --primary: #2563eb;
+  --primary-hover: #1e40af;
+  --primary-contrast: #ffffff;
+}
+
+:root.dark {
+  --bg-1: #0f172a;
+  --bg-2: #1e293b;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --card-bg: #1e293b;
+
+  --primary: #3b82f6;
+  --primary-hover: #1d4ed8;
+  --primary-contrast: #ffffff;
+}
+
+p {
+  color: var(--text);
+}

@@ -14,18 +14,3 @@
     justify-content: center;
     align-items: center;
 }
-
-.btn {
-    height: fit-content;
-    width: fit-content;
-    padding: 1rem;
-}
-
-.btn:active {
-    transform: scale(0.90);
-}
-
-.icon {
-    max-width: 2rem;
-    max-height: 2rem;
-}

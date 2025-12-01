@@ -3,6 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightsteelblue;
+    background-color: var(--bg-1);
     margin-top: auto;
 }
